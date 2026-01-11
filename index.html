@@ -3,12 +3,42 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Φεστιβάλ ποίησης «Νέες Φωνές» στο Ρέθυμνο, 5–6 Ιουνίου 2026. Δράσεις για μαθητές/σχολεία, νέους δημιουργούς και κοινό: εργαστήρια, ανοιχτές αναγνώσεις, περιηγήσεις. Δήλωσε συμμετοχή ή υπέβαλε ποίημα." />
-  <title>Φεστιβάλ ποίησης: Νέες Φωνές — Ρέθυμνο, 5–6 Ιουνίου 2026</title>
+  <meta name="description" content="Νέες Φωνές — ένα διήμερο όπου η ποίηση κατεβαίνει στην πόλη. Ρέθυμνο, 5–6 Ιουνίου 2026. Εργαστήρια, ανοιχτές αναγνώσεις, περιηγήσεις, υποβολές." />
+  <title>Νέες Φωνές — Ρέθυμνο, 5–6 Ιουνίου 2026</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="stylesheet" href="assets/styles.css" />
   <script defer src="assets/script.js"></script>
+
+  <!-- Small artistic tweaks without touching styles.css -->
+  <style>
+    .stanza{
+      margin: 1rem 0 1.2rem;
+      padding: 1rem 1.1rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: #ffffff85;
+    }
+    .stanza p{ margin: .25rem 0; }
+    .stanza .line{ display:block; }
+    .whisper{ font-style: italic; color: color-mix(in oklab, var(--ink) 80%, var(--muted)); }
+    .ink-note{
+      display:inline-block;
+      padding: .35rem .6rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: linear-gradient(90deg, #ffffff90, #ffffff70);
+      color: var(--muted);
+      font-size: .95rem;
+    }
+    .rule{
+      height: 1px;
+      background: linear-gradient(90deg, transparent, color-mix(in oklab, var(--indigo) 25%, transparent), transparent);
+      margin: 1.2rem 0;
+    }
+    .hero h1{ letter-spacing: -0.02em; }
+    .hero .lead{ font-size: 1.12rem; }
+    .card h3, .card h2{ letter-spacing: -0.01em; }
+  </style>
 </head>
 
 <body>
@@ -50,42 +80,59 @@
       <div class="container hero-grid">
         <div class="hero-copy">
           <p class="eyebrow">Ρέθυμνο • 5–6 Ιουνίου 2026</p>
-          <h1>Φεστιβάλ ποίησης: <span class="gradient-text">Νέες Φωνές</span></h1>
+          <h1>Νέες <span class="gradient-text">Φωνές</span></h1>
 
           <p class="lead">
-            Η ποίηση τρύπωσε στο ωρολόγιο πρόγραμμα· χόρεψε στα περιθώρια των σελίδων· παραβίασε τα διάκενα των τετραδίων.
-            Κάτι έχει να σου πει· έλα να την αφουγκραστούμε μαζί!
+            Δύο μέρες που η ποίηση δεν “ανεβαίνει” στη σκηνή—κατεβαίνει στην πόλη.
+            Στα σκαλιά, στις αίθουσες, στα βλέμματα. Σε μία ανάσα.
           </p>
 
+          <div class="stanza" aria-label="Ποιητικό απόσπασμα">
+            <p class="whisper">
+              <span class="line">Η ποίηση τρύπωσε στο ωρολόγιο πρόγραμμα,</span>
+              <span class="line">χόρεψε στα περιθώρια των σελίδων,</span>
+              <span class="line">παραβίασε τα διάκενα των τετραδίων.</span>
+            </p>
+            <div class="rule"></div>
+            <p class="whisper">
+              <span class="line">Κάτι έχει να σου πει.</span>
+              <span class="line">Έλα να την αφουγκραστούμε μαζί.</span>
+            </p>
+          </div>
+
           <div class="cta-row">
-            <a class="btn btn-primary" href="#participation">Δήλωσε συμμετοχή</a>
-            <a class="btn btn-secondary" href="#schools">Για σχολεία</a>
+            <a class="btn btn-primary" href="#participation">Μπαίνω στο κάλεσμα</a>
+            <a class="btn btn-secondary" href="#schools">Έρχομαι με σχολείο</a>
           </div>
 
           <ul class="meta-list" aria-label="Σύντομες πληροφορίες">
-            <li><strong>Διοργάνωση:</strong> Τμήμα Φιλολογίας, Πανεπιστήμιο Κρήτης</li>
-            <li><strong>Ημέρες:</strong> Παρασκευή 5/6 &amp; Σάββατο 6/6</li>
-            <li><strong>Δράσεις:</strong> εργαστήρια, αναγνώσεις, παρουσιάσεις, περιηγήσεις</li>
+            <li><strong>Ρυθμός:</strong> εργαστήρια • αναγνώσεις • περιήγηση • συνάντηση</li>
+            <li><strong>Χρόνος:</strong> Παρασκευή 5/6 &amp; Σάββατο 6/6</li>
+            <li><strong>Σπίτι:</strong> Ρέθυμνο (και ό,τι χωράει μέσα του)</li>
           </ul>
+
+          <p class="ink-note" aria-label="Μικρή σημείωση">
+            Δεν έρχεσαι για να “είσαι έτοιμος/η”. Έρχεσαι για να δοκιμάσεις.
+          </p>
         </div>
 
         <div class="hero-card" role="region" aria-label="Γρήγορη πρόσβαση">
           <div class="card">
-            <h2 class="card-title">Τι είναι το «Νέες Φωνές»</h2>
+            <h2 class="card-title">Τι είναι οι «Νέες Φωνές»</h2>
             <p>
-              Ένα φεστιβάλ πρωτοεμφανιζόμενων ποιητικών φωνών που δίνει χώρο στη δοκιμή, στη χαρά και στη συνάντηση
-              μαθητών, νέων δημιουργών και κοινού.
+              Ένα φεστιβάλ που αγαπά τις πρώτες απόπειρες, τις “μισές” γραμμές,
+              τις σιωπές που γίνονται λόγος. Ένας χώρος όπου η φωνή βρίσκει τόπο.
             </p>
-            <a class="text-link" href="#festival">Διάβασε περισσότερα →</a>
+            <a class="text-link" href="#festival">Άνοιξε το μανιφέστο →</a>
           </div>
 
           <div class="card">
-            <h2 class="card-title">Οι 2 μέρες με μια ματιά</h2>
+            <h2 class="card-title">Δύο μέρες, μια κίνηση</h2>
             <ul class="bullets">
-              <li><strong>Παρασκευή 5/6:</strong> εργαστήριο + παρουσιάσεις μαθητών</li>
-              <li><strong>Σάββατο 6/6:</strong> δράσεις για όλους (ανοιχτές αναγνώσεις, εργαστήρια, περιηγήσεις)</li>
+              <li><strong>Παρασκευή 5/6:</strong> σχολεία, εργαστήριο, παρουσιάσεις</li>
+              <li><strong>Σάββατο 6/6:</strong> ανοιχτές δράσεις, αναγνώσεις, περίπατος</li>
             </ul>
-            <a class="text-link" href="#program">Δες το πρόγραμμα →</a>
+            <a class="text-link" href="#program">Δες τον παλμό →</a>
           </div>
         </div>
       </div>
@@ -95,75 +142,79 @@
     <section class="section" aria-label="Για ποιους είναι">
       <div class="container">
         <div class="section-head">
-          <h2>Για ποιους είναι</h2>
-          <p class="muted">
-            Η ποίηση έχει όλες τις ηλικίες: είναι έφηβη, ενήλικη, παιδί — και μεγαλώνει μαζί μας.
-          </p>
+          <h2>Σε ποιους ανοίγει</h2>
+          <p class="muted">Αν έχεις φωνή — ή αν ψάχνεις τη φωνή σου — είσαι μέσα.</p>
         </div>
 
         <div class="grid cards-4">
           <article class="card">
             <h3>Μαθητές/Μαθήτριες</h3>
-            <p>Ασφαλής χώρος για δοκιμή, παιχνίδι με τη γλώσσα και παρουσίαση.</p>
+            <p>Χώρος για παιχνίδι με τη γλώσσα, ρυθμό, εικόνες. Χωρίς φόβο.</p>
           </article>
 
           <article class="card">
             <h3>Εκπαιδευτικοί</h3>
-            <p>Ιδέες για εργαστήρια, συνοδεία τμημάτων, υλικό και καθαρές οδηγίες.</p>
+            <p>Μια ευκαιρία να γίνει η ποίηση πράξη, μέσα και έξω από την τάξη.</p>
           </article>
 
           <article class="card">
             <h3>Νέοι δημιουργοί</h3>
-            <p>Open call για ποιήματα, συμμετοχή σε δράσεις, ανοιχτές αναγνώσεις.</p>
+            <p>Open call, μικρόφωνο ανοιχτό, εργαστήρια: δοκιμή, όχι τελειότητα.</p>
           </article>
 
           <article class="card">
             <h3>Κοινό</h3>
-            <p>Ελάτε να ακούσουμε, να περπατήσουμε την πόλη, να συναντηθούμε γύρω από την ποίηση.</p>
+            <p>Έλα να ακούσεις. Να περπατήσεις. Να μείνεις λίγο στην ίδια λέξη.</p>
           </article>
         </div>
 
         <div class="callout">
           <h3>Δεν χρειάζεται να…</h3>
           <ul class="bullets">
-            <li>έχεις προηγούμενη εμπειρία σε αναγνώσεις ή εργαστήρια</li>
-            <li>δημοσιευμένο έργο</li>
-            <li>«τέλεια» γραφή — μας ενδιαφέρει η φωνή και η δοκιμή</li>
+            <li>έχεις “σωστό” τρόπο να γράφεις</li>
+            <li>έχεις δημοσιεύσει ή εμφανιστεί κάπου</li>
+            <li>νιώθεις έτοιμος/η — αρκεί να είσαι παρών/παρούσα</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- FESTIVAL PAGE CONTENT -->
+    <!-- FESTIVAL -->
     <section id="festival" class="section alt" aria-label="Το Φεστιβάλ">
       <div class="container">
         <div class="section-head">
           <h2>Το Φεστιβάλ</h2>
-          <p class="muted">Όραμα • Πρόσκληση • Αρχές και αξίες</p>
+          <p class="muted">Όχι “εκδήλωση”. Μια συνάντηση που αφήνει ίχνη.</p>
         </div>
 
         <div class="prose">
+          <div class="stanza">
+            <p class="whisper">
+              <span class="line">Η ποίηση δεν είναι μακριά.</span>
+              <span class="line">Είναι στο σώμα της φωνής,</span>
+              <span class="line">στην παύση πριν από τη λέξη,</span>
+              <span class="line">στο “ξαναπες το”.</span>
+            </p>
+          </div>
+
           <p>
-            Στο φεστιβάλ πρωτοεμφανιζόμενων ποιητικών φωνών, που διοργανώνει το Τμήμα Φιλολογίας του Πανεπιστημίου Κρήτης
-            στο Ρέθυμνο, αρχές του θέρους, πιστεύουμε πως η ποίηση έχει όλες τις ηλικίες: είναι έφηβη, ενήλικη, παιδί...
-          </p>
-          <p class="muted">
-            (Εδώ μπορείς να βάλεις ολόκληρο το κείμενο πρόσκλησης — ως κύριο σώμα.)
+            Οι «Νέες Φωνές» είναι ένα διήμερο όπου η ποίηση γίνεται πράξη: γράφουμε,
+            ακούμε, μοιραζόμαστε, περπατάμε την πόλη σαν να διαβάζουμε έναν ζωντανό στίχο.
           </p>
 
           <h3>Αρχές / Αξίες</h3>
           <ul>
-            <li>ασφαλές πλαίσιο</li>
-            <li>συμπερίληψη</li>
-            <li>πειραματισμός</li>
-            <li>χαρά και συνάντηση</li>
+            <li>ασφαλές πλαίσιο (χωρίς ειρωνεία, χωρίς αποκλεισμούς)</li>
+            <li>συμπερίληψη (οι φωνές δεν μοιάζουν—κι αυτό είναι καλό)</li>
+            <li>πειραματισμός (δοκιμές, ρωγμές, ξαναγράψιμο)</li>
+            <li>χαρά (η ποίηση ως παιχνίδι, ως αναπνοή)</li>
           </ul>
 
-          <h3>Τι θα κερδίσω / τι θα ζήσω</h3>
+          <h3>Τι μπορεί να σου μείνει</h3>
           <ul>
-            <li>εργαστήρια με πρακτικά εργαλεία γραφής</li>
-            <li>ευκαιρία να μοιραστείς κείμενα (αν θέλεις)</li>
-            <li>γνωριμίες και διάλογο ανάμεσα σε γενιές και κοινότητες</li>
+            <li>μια άσκηση που θα συνεχίσεις σπίτι</li>
+            <li>μια φράση που θα σε ακολουθήσει στον δρόμο</li>
+            <li>μια γνωριμία που θα γίνει συνεργασία</li>
           </ul>
         </div>
       </div>
@@ -174,7 +225,7 @@
       <div class="container">
         <div class="section-head">
           <h2>Πρόγραμμα</h2>
-          <p class="muted">Ανά ημέρα: 5 Ιουνίου &amp; 6 Ιουνίου (ενδεικτικό — συμπληρώστε όταν “κλειδώσει”)</p>
+          <p class="muted">Δες το σαν παρτιτούρα: ώρες/χώροι—και ανάμεσα, η ζωή.</p>
         </div>
 
         <div class="tabs" data-tabs>
@@ -192,24 +243,24 @@
               <article class="agenda-item">
                 <div class="agenda-time">10:00–12:00</div>
                 <div class="agenda-body">
-                  <h3>Εργαστήριο ποίησης (μαθητές/σχολεία)</h3>
+                  <h3>Εργαστήριο: “Μια λέξη, ένας κόσμος”</h3>
                   <p class="muted">
                     <strong>Χώρος:</strong> (placeholder) • <strong>Για ποιους:</strong> μαθητές/μαθήτριες
                     • <strong>Δήλωση:</strong> ναι
                   </p>
-                  <p>Δίωρο εργαστήριο δημιουργικής γραφής με ασκήσεις και μικρές αναγνώσεις.</p>
+                  <p>Ασκήσεις γραφής, ρυθμός, εικόνες. Από την πρόταση στον στίχο.</p>
                 </div>
               </article>
 
               <article class="agenda-item">
                 <div class="agenda-time">12:30–14:00</div>
                 <div class="agenda-body">
-                  <h3>Παρουσιάσεις μαθητών</h3>
+                  <h3>Παρουσιάσεις μαθητών: “Οι φωνές ανεβαίνουν”</h3>
                   <p class="muted">
                     <strong>Χώρος:</strong> (placeholder) • <strong>Για ποιους:</strong> όλοι
                     • <strong>Δήλωση:</strong> όχι
                   </p>
-                  <p>Σύντομες παρουσιάσεις ποιημάτων/κειμένων από σχολικές ομάδες.</p>
+                  <p>Μικρές αναγνώσεις, μικρές παύσεις, μεγάλα χειροκροτήματα.</p>
                 </div>
               </article>
             </div>
@@ -220,36 +271,36 @@
               <article class="agenda-item">
                 <div class="agenda-time">11:00–12:30</div>
                 <div class="agenda-body">
-                  <h3>Ανοιχτή ανάγνωση (Open Mic)</h3>
+                  <h3>Open Mic: “Άνοιξε τη φωνή”</h3>
                   <p class="muted">
                     <strong>Χώρος:</strong> (placeholder) • <strong>Για ποιους:</strong> όλοι
                     • <strong>Δήλωση:</strong> προαιρετικά
                   </p>
-                  <p>Φέρε ένα ποίημα (δικό σου ή αγαπημένο) και διάβασε 2–3 λεπτά.</p>
+                  <p>2–3 λεπτά για να ακουστεί κάτι αληθινό. Δικό σου ή αγαπημένο.</p>
                 </div>
               </article>
 
               <article class="agenda-item">
                 <div class="agenda-time">13:00–15:00</div>
                 <div class="agenda-body">
-                  <h3>Εργαστήριο για όλους</h3>
+                  <h3>Εργαστήριο: “Ρωγμές, ρυθμός, ξαναγράψιμο”</h3>
                   <p class="muted">
                     <strong>Χώρος:</strong> (placeholder) • <strong>Για ποιους:</strong> νέοι δημιουργοί &amp; κοινό
                     • <strong>Δήλωση:</strong> ναι
                   </p>
-                  <p>Πειραματισμός με φόρμες, εικόνες και ρυθμό — από το σημείωμα στο ποίημα.</p>
+                  <p>Πώς ένα “λάθος” γίνεται εύρημα. Πώς μια παύση γίνεται μορφή.</p>
                 </div>
               </article>
 
               <article class="agenda-item">
                 <div class="agenda-time">18:00–19:30</div>
                 <div class="agenda-body">
-                  <h3>Περιήγηση στην πόλη: «Το φεστιβάλ απλώνεται στο Ρέθυμνο»</h3>
+                  <h3>Περίπατος: “Το ποίημα μέσα στην πόλη”</h3>
                   <p class="muted">
                     <strong>Αφετηρία:</strong> (placeholder) • <strong>Για ποιους:</strong> όλοι
                     • <strong>Δήλωση:</strong> όχι
                   </p>
-                  <p>Σύντομη διαδρομή με στάσεις/αναγνώσεις σε επιλεγμένα σημεία.</p>
+                  <p>Στάσεις-αναγνώσεις. Ο δρόμος ως σελίδα.</p>
                 </div>
               </article>
             </div>
@@ -266,38 +317,50 @@
     <section id="schools" class="section alt" aria-label="Για Μαθητές και Σχολεία">
       <div class="container">
         <div class="section-head">
-          <h2>Για Μαθητές &amp; Σχολεία (Παρασκευή)</h2>
-          <p class="muted">Εργαστήριο 2 ωρών + παρουσιάσεις • Οδηγίες συμμετοχής • Υποβολή ποιημάτων μαθητών</p>
+          <h2>Για Μαθητές &amp; Σχολεία</h2>
+          <p class="muted">Παρασκευή: εργαστήριο + παρουσίαση — ένα “μάθημα” που μοιάζει με γιορτή.</p>
         </div>
 
         <div class="grid two-cols">
           <article class="card">
-            <h3>Τι θα γίνει την Παρασκευή</h3>
+            <h3>Τι θα γίνει</h3>
             <ul class="bullets">
               <li>εργαστήριο δημιουργικής γραφής (2 ώρες)</li>
               <li>παρουσιάσεις/αναγνώσεις μαθητών</li>
-              <li>σύντομη συζήτηση &amp; ανατροφοδότηση</li>
+              <li>συζήτηση: πώς ακούμε μια φωνή με σεβασμό</li>
             </ul>
           </article>
 
           <article class="card">
-            <h3>Οδηγίες για σχολεία</h3>
+            <h3>Πρακτικά για σχολεία</h3>
             <ul class="bullets">
               <li><strong>Αριθμός συμμετεχόντων:</strong> (placeholder)</li>
               <li><strong>Συνοδοί:</strong> (placeholder)</li>
               <li><strong>Μετακίνηση:</strong> (placeholder)</li>
-              <li><strong>Τι να φέρουν:</strong> τετράδιο/στυλό, νερό, (προαιρετικά) 1 αγαπημένο ποίημα</li>
+              <li><strong>Τι να φέρουν:</strong> τετράδιο/στυλό, νερό, (προαιρετικά) 1 αγαπημένη φράση</li>
             </ul>
           </article>
         </div>
 
         <div class="card">
-          <h3>Υποβολή ποιημάτων μαθητών (κριτική επιτροπή)</h3>
+          <h3>Υποβολή ποιημάτων μαθητών</h3>
           <p class="muted">
-            <strong>Όρια λέξεων/μορφή:</strong> (placeholder) • <strong>Προθεσμία:</strong> (placeholder)
+            <strong>Όρια/μορφή:</strong> (placeholder) • <strong>Προθεσμία:</strong> (placeholder)
           </p>
 
-          <form class="form" action="#" method="post">
+          <!-- Netlify-ready form -->
+          <form class="form"
+                name="student-poems"
+                method="POST"
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+                action="/thank-you.html"
+                enctype="multipart/form-data">
+            <input type="hidden" name="form-name" value="student-poems" />
+            <p class="honeypot">
+              <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+            </p>
+
             <div class="form-grid">
               <label>
                 <span>Σχολείο / Ομάδα</span>
@@ -315,13 +378,13 @@
               </label>
 
               <label>
-                <span>Αρχείο (placeholder)</span>
+                <span>Αρχείο υποβολής</span>
                 <input name="file" type="file" accept=".pdf,.doc,.docx,.txt" />
               </label>
 
               <label class="full">
                 <span>Σχόλια (προαιρετικά)</span>
-                <textarea name="notes" rows="4"></textarea>
+                <textarea name="notes" rows="4" placeholder="Π.χ. αριθμός μαθητών, ανάγκες πρόσβασης..."></textarea>
               </label>
             </div>
 
@@ -341,38 +404,52 @@
       <div class="container">
         <div class="section-head">
           <h2>Συμμετοχή</h2>
-          <p class="muted">3 καθαρές διαδρομές: δράσεις • υποβολή ποιήματος • σχολείο — και (προαιρετικά) εθελοντισμός</p>
+          <p class="muted">Διάλεξε τον δρόμο σου. Όλοι οδηγούν στο ίδιο πράγμα: παρουσία.</p>
         </div>
 
         <div class="grid cards-3">
           <article class="card">
-            <h3>Συμμετέχω σε δράσεις</h3>
-            <p>Δήλωσε ενδιαφέρον για εργαστήρια, αναγνώσεις, περιήγηση.</p>
-            <a class="btn btn-ghost" href="#form-actions">Πήγαινε στη φόρμα</a>
+            <h3>Μπαίνω στις δράσεις</h3>
+            <p>Εργαστήρια, αναγνώσεις, περίπατος. Διάλεξε τι σε τραβάει.</p>
+            <a class="btn btn-ghost" href="#form-actions">Πάω στη φόρμα</a>
           </article>
 
           <article class="card">
-            <h3>Υποβάλλω ποίημα (Open Call)</h3>
-            <p>Στείλε ένα ή περισσότερα ποιήματα σύμφωνα με τις οδηγίες.</p>
+            <h3>Στέλνω ποίημα (Open Call)</h3>
+            <p>Στείλε κείμενα όπως είναι: ζωντανά, υπό διαμόρφωση, αληθινά.</p>
             <a class="btn btn-ghost" href="#open-call">Οδηγίες &amp; φόρμα</a>
           </article>
 
           <article class="card">
             <h3>Έρχομαι ως σχολείο</h3>
-            <p>Οργάνωσε συμμετοχή τμήματος/ομάδας για την Παρασκευή.</p>
-            <a class="btn btn-ghost" href="#schools">Δες οδηγίες</a>
+            <p>Οργάνωσε την ομάδα σου για την Παρασκευή.</p>
+            <a class="btn btn-ghost" href="#schools">Δες λεπτομέρειες</a>
           </article>
         </div>
 
         <div id="form-actions" class="card">
-          <h3>Δήλωση συμμετοχής σε δράσεις</h3>
-          <form class="form" action="#" method="post" data-participation-form>
+          <h3>Δήλωση συμμετοχής</h3>
+
+          <!-- Netlify-ready form -->
+          <form class="form"
+                name="participation"
+                method="POST"
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+                action="/thank-you.html"
+                enctype="multipart/form-data"
+                data-participation-form>
+            <input type="hidden" name="form-name" value="participation" />
+            <p class="honeypot">
+              <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+            </p>
+
             <fieldset class="fieldset">
               <legend>Επιλογή διαδρομής</legend>
               <div class="radio-row">
-                <label><input type="radio" name="path" value="actions" checked /> Συμμετοχή σε δράσεις</label>
-                <label><input type="radio" name="path" value="poem" /> Υποβολή ποιήματος</label>
-                <label><input type="radio" name="path" value="volunteer" /> Εθελοντισμός</label>
+                <label><input type="radio" name="path" value="actions" checked /> Θέλω δράσεις</label>
+                <label><input type="radio" name="path" value="poem" /> Θέλω να στείλω ποίημα</label>
+                <label><input type="radio" name="path" value="volunteer" /> Θέλω να βοηθήσω</label>
               </div>
             </fieldset>
 
@@ -388,7 +465,7 @@
               </label>
 
               <label>
-                <span>Ιδιότητα</span>
+                <span>Ποιος/ποια είσαι σήμερα εδώ;</span>
                 <select name="role">
                   <option value="student">Μαθητής/Μαθήτρια</option>
                   <option value="teacher">Εκπαιδευτικός</option>
@@ -405,17 +482,17 @@
               <!-- ACTIONS -->
               <div class="block full" data-block="actions">
                 <label class="full">
-                  <span>Δράσεις που σε ενδιαφέρουν</span>
+                  <span>Τι σε καλεί;</span>
                   <div class="check-grid">
                     <label><input type="checkbox" name="actions[]" value="workshops" /> Εργαστήρια</label>
                     <label><input type="checkbox" name="actions[]" value="open-mic" /> Ανοιχτή ανάγνωση</label>
-                    <label><input type="checkbox" name="actions[]" value="walk" /> Περιήγηση/διαδρομή</label>
+                    <label><input type="checkbox" name="actions[]" value="walk" /> Περίπατος/διαδρομή</label>
                     <label><input type="checkbox" name="actions[]" value="talks" /> Συζητήσεις/παρουσιάσεις</label>
                   </div>
                 </label>
 
                 <label class="full">
-                  <span>Σημειώσεις (π.χ. διαθεσιμότητα, προσβασιμότητα)</span>
+                  <span>Σημείωση (π.χ. ώρες, προσβασιμότητα, ανάγκες)</span>
                   <textarea name="actions_notes" rows="4"></textarea>
                 </label>
               </div>
@@ -433,7 +510,7 @@
                 </label>
 
                 <label class="full">
-                  <span>Σύντομο bio (προαιρετικό)</span>
+                  <span>Μικρό σημείωμα για σένα (προαιρετικό)</span>
                   <textarea name="bio" rows="4" placeholder="2–3 προτάσεις"></textarea>
                 </label>
               </div>
@@ -441,11 +518,11 @@
               <!-- VOLUNTEER -->
               <div class="block full" data-block="volunteer" hidden>
                 <label class="full">
-                  <span>Σε τι θα ήθελες να βοηθήσεις;</span>
+                  <span>Πού θα ήθελες να βοηθήσεις;</span>
                   <div class="check-grid">
-                    <label><input type="checkbox" name="volunteer[]" value="front-desk" /> Υποδοχή / πληροφορίες</label>
+                    <label><input type="checkbox" name="volunteer[]" value="front-desk" /> Υποδοχή</label>
                     <label><input type="checkbox" name="volunteer[]" value="rooms" /> Υποστήριξη χώρων</label>
-                    <label><input type="checkbox" name="volunteer[]" value="photo" /> Φωτο/βίντεο (αν έχεις εξοπλισμό)</label>
+                    <label><input type="checkbox" name="volunteer[]" value="photo" /> Φωτο/βίντεο</label>
                     <label><input type="checkbox" name="volunteer[]" value="access" /> Προσβασιμότητα / συνοδεία</label>
                   </div>
                 </label>
@@ -457,9 +534,7 @@
               </div>
 
               <label class="full">
-                <span>
-                  Συναίνεση για χρήση υλικού (φωτογραφίες/βίντεο/ηχογραφήσεις)
-                </span>
+                <span>Συναίνεση για χρήση υλικού (φωτο/βίντεο/ήχος)</span>
                 <select name="media_consent" required>
                   <option value="yes">Ναι, αποδέχομαι</option>
                   <option value="no">Όχι, δεν αποδέχομαι</option>
@@ -468,10 +543,10 @@
             </div>
 
             <div class="form-actions">
-              <button class="btn btn-primary" type="submit">Αποστολή</button>
+              <button class="btn btn-primary" type="submit">Στέλνω</button>
               <p class="fineprint">
-                Δες: <a class="text-link" href="terms.html">Όροι συμμετοχής &amp; χρήση υλικού</a> •
-                <a class="text-link" href="privacy.html">Πολιτική απορρήτου / cookies</a>
+                Δες: <a class="text-link" href="terms.html">Όροι συμμετοχής</a> •
+                <a class="text-link" href="privacy.html">Απόρρητο / cookies</a>
               </p>
             </div>
           </form>
@@ -484,35 +559,35 @@
       <div class="container">
         <div class="section-head">
           <h2>Χώροι &amp; Ρέθυμνο</h2>
-          <p class="muted">Χάρτης • Πρόσβαση • Προτάσεις περιήγησης</p>
+          <p class="muted">Η πόλη ως σκηνή. Ο χάρτης ως σελίδα.</p>
         </div>
 
         <div class="grid two-cols">
           <article class="card">
             <h3>Χάρτης (placeholder)</h3>
-            <p class="muted">Βάλε εδώ ενσωμάτωση χάρτη (π.χ. Google Maps / OpenStreetMap) όταν έχετε τελικά σημεία.</p>
+            <p class="muted">Όταν κλειδώσουν τα σημεία, βάλε εδώ ενσωμάτωση χάρτη.</p>
             <div class="map-placeholder" aria-label="Πλαίσιο χάρτη (ενδεικτικό)">
-              <p>Χάρτης: Πανεπιστήμιο, Βιβλιοθήκη, χώροι δράσεων</p>
+              <p>Πανεπιστήμιο • Βιβλιοθήκη • χώροι δράσεων • σημεία περιπάτου</p>
             </div>
           </article>
 
           <article class="card">
-            <h3>Πρακτικά</h3>
+            <h3>Πρακτικά (χωρίς να χάνουμε το ποίημα)</h3>
             <ul class="bullets">
               <li><strong>Πρόσβαση ΑμεΑ:</strong> (placeholder)</li>
               <li><strong>Στάθμευση:</strong> (placeholder)</li>
               <li><strong>ΜΜΜ:</strong> (placeholder)</li>
-              <li><strong>Διαδρομές με τα πόδια:</strong> (placeholder)</li>
+              <li><strong>Πεζή διαδρομή:</strong> (placeholder)</li>
             </ul>
           </article>
         </div>
 
         <div class="card">
-          <h3>«Το φεστιβάλ απλώνεται στην πόλη» — προτεινόμενες στάσεις</h3>
+          <h3>Μικρές στάσεις — μεγάλα βλέμματα</h3>
           <ul class="bullets">
-            <li>παλιά πόλη &amp; μικρές πλατείες (στάσεις ανάγνωσης)</li>
-            <li>παραλία/λιμάνι (σύντομες παρεμβάσεις)</li>
-            <li>βιβλιοθήκη/πολιτιστικοί χώροι (συζητήσεις)</li>
+            <li>παλιά πόλη: στενά σαν στίχοι που χωρούν μυστικά</li>
+            <li>λιμάνι: ορίζοντας ως μεταφορά</li>
+            <li>βιβλιοθήκη/χώροι πολιτισμού: συναντήσεις και ανταλλαγές</li>
           </ul>
         </div>
       </div>
@@ -523,33 +598,34 @@
       <div class="container">
         <div class="section-head">
           <h2>Οργανωτική Επιτροπή</h2>
-          <p class="muted">Ονόματα/ιδιότητες (placeholder) • Ρόλος επιτροπής • (προαιρετικά) κριτική επιτροπή</p>
+          <p class="muted">Οι άνθρωποι πίσω από τη φροντίδα του πλαισίου.</p>
         </div>
 
         <div class="grid cards-3">
           <article class="card">
             <h3>Όνομα Επώνυμο</h3>
             <p class="muted">Ιδιότητα / Ρόλος</p>
-            <p>1–2 προτάσεις (προαιρετικά).</p>
+            <p>Φροντίζει ώστε οι φωνές να ακούγονται καθαρά.</p>
           </article>
 
           <article class="card">
             <h3>Όνομα Επώνυμο</h3>
             <p class="muted">Ιδιότητα / Ρόλος</p>
-            <p>1–2 προτάσεις (προαιρετικά).</p>
+            <p>Συντονίζει τη ροή: από την πρόβα μέχρι την παύση.</p>
           </article>
 
           <article class="card">
             <h3>Όνομα Επώνυμο</h3>
             <p class="muted">Ιδιότητα / Ρόλος</p>
-            <p>1–2 προτάσεις (προαιρετικά).</p>
+            <p>Κρατάει τον χώρο ανοιχτό, ήσυχο και ζωντανό.</p>
           </article>
         </div>
 
         <div class="callout">
-          <h3>Ρόλος επιτροπής</h3>
+          <h3>Τι προστατεύουμε</h3>
           <p>
-            Συντονίζει το πρόγραμμα, διασφαλίζει το πλαίσιο συμπερίληψης και υποστηρίζει τη ροή των δράσεων.
+            Ένα ασφαλές πλαίσιο όπου η δημιουργικότητα δεν χρειάζεται άδεια.
+            Μόνο παρουσία, σεβασμό και περιέργεια.
           </p>
         </div>
       </div>
@@ -559,27 +635,27 @@
     <section class="section alt" aria-label="Νέα και Ανακοινώσεις">
       <div class="container">
         <div class="section-head">
-          <h2>Νέα / Ανακοινώσεις</h2>
-          <p class="muted">3 κάρτες (ενδεικτικές) — ενημερώστε τες όταν ανοίξουν οι προσκλήσεις</p>
+          <h2>Σημειώματα / Ανακοινώσεις</h2>
+          <p class="muted">Μικρά χαρτάκια στον πίνακα. Μικρές αλλαγές στον παλμό.</p>
         </div>
 
         <div class="grid cards-3">
           <article class="card">
-            <h3>Άνοιξε η πρόσκληση συμμετοχής</h3>
+            <h3>Το κάλεσμα άνοιξε</h3>
             <p class="muted">Ημερομηνία: (placeholder)</p>
-            <p>Ξεκίνησαν οι δηλώσεις για δράσεις και open call.</p>
+            <p>Στείλε ποίημα ή δήλωσε δράσεις. Η πόρτα είναι μισάνοιχτη—μπες.</p>
           </article>
 
           <article class="card">
             <h3>Προθεσμίες</h3>
             <p class="muted">Ημερομηνία: (placeholder)</p>
-            <p>Δείτε τις ημερομηνίες για υποβολές και συμμετοχές σχολείων.</p>
+            <p>Οι ημερομηνίες είναι οι παύσεις μας. Δες πότε κλείνει κάθε διαδρομή.</p>
           </article>
 
           <article class="card">
-            <h3>Ανακοίνωση προγράμματος</h3>
+            <h3>Το πρόγραμμα “κλειδώνει”</h3>
             <p class="muted">Ημερομηνία: (placeholder)</p>
-            <p>Το πρόγραμμα ανά ημέρα είναι διαθέσιμο και σε PDF.</p>
+            <p>Όταν σταθεροποιηθεί, θα ανέβει και σε PDF.</p>
           </article>
         </div>
       </div>
@@ -590,13 +666,25 @@
       <div class="container">
         <div class="section-head">
           <h2>Επικοινωνία / FAQ</h2>
-          <p class="muted">Φόρμα επικοινωνίας + συχνές ερωτήσεις</p>
+          <p class="muted">Αν κάτι σε κρατάει πίσω, γράψε μας. Αν κάτι σε τραβάει, έλα.</p>
         </div>
 
         <div class="grid two-cols">
           <div class="card">
             <h3>Στείλε μήνυμα</h3>
-            <form class="form" action="#" method="post">
+
+            <!-- Netlify-ready form -->
+            <form class="form"
+                  name="contact"
+                  method="POST"
+                  data-netlify="true"
+                  netlify-honeypot="bot-field"
+                  action="/thank-you.html">
+              <input type="hidden" name="form-name" value="contact" />
+              <p class="honeypot">
+                <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+              </p>
+
               <div class="form-grid">
                 <label>
                   <span>Ονοματεπώνυμο</span>
@@ -610,7 +698,7 @@
 
                 <label class="full">
                   <span>Μήνυμα</span>
-                  <textarea name="message" rows="6" required></textarea>
+                  <textarea name="message" rows="6" required placeholder="Γράψε μας δύο γραμμές. Ή δέκα."></textarea>
                 </label>
               </div>
 
@@ -628,27 +716,27 @@
 
             <details>
               <summary>Χρειάζεται εμπειρία;</summary>
-              <p>Όχι. Μπορείς να έρθεις ως ακροατής/ακροάτρια ή να δοκιμάσεις σε δράσεις με καθοδήγηση.</p>
+              <p>Όχι. Εδώ η εμπειρία είναι να έρθεις. Η υπόλοιπη γίνεται μέσα στις δράσεις.</p>
             </details>
 
             <details>
               <summary>Υπάρχει κόστος;</summary>
-              <p>(Placeholder) Αναφέρετε αν είναι δωρεάν ή αν υπάρχει συμβολικό κόστος.</p>
+              <p>(Placeholder) Γράψτε αν είναι δωρεάν ή αν υπάρχει συμβολικό κόστος.</p>
             </details>
 
             <details>
               <summary>Υπάρχουν όρια ηλικίας;</summary>
-              <p>Οι δράσεις είναι για μαθητές, νέους δημιουργούς και κοινό. Κάποιες δράσεις μπορεί να έχουν προτεινόμενη ηλικία.</p>
+              <p>Υπάρχουν δράσεις για μαθητές, νέους δημιουργούς και κοινό. Ορισμένες μπορεί να έχουν προτεινόμενη ηλικία.</p>
             </details>
 
             <details>
               <summary>Μπορώ να έρθω χωρίς σχολείο;</summary>
-              <p>Ναι. Το Σάββατο έχει δράσεις για όλους, και αρκετές είναι ανοιχτές χωρίς δήλωση.</p>
+              <p>Ναι. Το Σάββατο είναι ανοιχτό για όλους, με δράσεις που δεν χρειάζονται “άδεια”.</p>
             </details>
 
             <details>
               <summary>Τι γίνεται με την προσβασιμότητα;</summary>
-              <p>Δείτε τη σελίδα <a class="text-link" href="accessibility.html">Προσβασιμότητα</a> και σημειώστε ανάγκες στη φόρμα συμμετοχής.</p>
+              <p>Δες τη σελίδα <a class="text-link" href="accessibility.html">Προσβασιμότητα</a> και γράψε ανάγκες στη φόρμα.</p>
             </details>
           </div>
         </div>
@@ -665,12 +753,13 @@
           Πανεπιστήμιο Κρήτης • Τμήμα Φιλολογίας<br />
           Email: <a class="text-link" href="mailto:info@example.gr">info@example.gr</a>
         </p>
+        <p class="muted">Μια γιορτή για τις φωνές που έρχονται.</p>
       </div>
 
       <div>
         <h3>Γρήγοροι σύνδεσμοι</h3>
         <ul class="footer-links">
-          <li><a href="#participation">Δήλωσε συμμετοχή</a></li>
+          <li><a href="#participation">Μπαίνω στο κάλεσμα</a></li>
           <li><a href="#program">Πρόγραμμα</a></li>
           <li><a href="#schools">Για σχολεία</a></li>
           <li><a href="#rethymno">Χώροι &amp; πρόσβαση</a></li>
@@ -694,7 +783,7 @@
         </ul>
 
         <p class="fineprint">
-          © <span data-year></span> Νέες Φωνές • Όλα τα δικαιώματα διατηρούνται.
+          © <span data-year></span> Νέες Φωνές • Το κείμενο ανασαίνει — μην το φοβάσαι.
         </p>
       </div>
     </div>
