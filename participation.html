@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Ανοιχτό Κάλεσμα — Νέες Φωνές." />
+  <title>Ανοιχτό Κάλεσμα — Νέες Φωνές</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script defer src="assets/script.js"></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Μετάβαση στο κύριο περιεχόμενο</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span class="brand-text"><strong>Νέες φωνές</strong><span>Young Voices</span></span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span class="sr-only">Άνοιγμα/κλείσιμο μενού</span><span aria-hidden="true">☰</span></button>
+      <nav id="primary-nav" class="nav" aria-label="Κύριο μενού">
+        <ul>
+          <li><a href="index.html">Αρχική</a></li>
+          <li><a href="festival.html">Πληροφορίες</a></li>
+          <li><a href="poets.html">Ποιητές-Ποιήτριες</a></li>
+          <li><a href="program.html">Πρόγραμμα</a></li>
+          <li><a href="schools.html">Για Μαθητές &amp; Σχολεία</a></li>
+          <li><a href="participation.html" aria-current="page">Ανοιχτό Κάλεσμα</a></li>
+          <li><a href="rethymno.html">Χώροι &amp; Ρέθυμνο</a></li>
+          <li><a href="committee.html">Οργάνωση</a></li>
+          <li><a href="contact.html">Επικοινωνία / FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="section alt" aria-label="Ανοιχτό Κάλεσμα">
+      <div class="container">
+        <div class="section-head">
+          <h2>Ανοιχτό Κάλεσμα συμμετοχής / αποστολής ποιημάτων</h2>
+          <p class="muted">Open call for young voices.</p>
+        </div>
+
+        <div class="card prose">
+          <p><strong>Ανοιχτό Κάλεσμα</strong> συμμετοχής/ αποστολής ποιημάτων στο <strong>1ο Φεστιβάλ Ποίησης Κρήτης</strong>.</p>
+          <p>
+            Το Φεστιβάλ Ποίησης Κρήτης προσκαλεί νέους ποιητές και ποιήτριες να αποστείλουν ποιήματα για τη συμμετοχή τους
+            στο διήμερο εκδηλώσεων που θα πραγματοποιηθούν για πρώτη φορά τον Ιούνιο του 2026 στο Ρέθυμνο.
+          </p>
+
+          <div class="callout">
+            <h3>Οδηγίες (placeholder)</h3>
+            <ul class="bullets">
+              <li>μορφή αρχείου: PDF/DOCX/TXT</li>
+              <li>προθεσμία: (placeholder)</li>
+              <li>κριτική επιτροπή: (placeholder)</li>
+            </ul>
+          </div>
+
+          <form class="form"
+                name="participation"
+                method="POST"
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+                action="/thank-you.html"
+                enctype="multipart/form-data"
+                data-participation-form>
+            <input type="hidden" name="form-name" value="participation" />
+            <p class="honeypot">
+              <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+            </p>
+
+            <fieldset class="fieldset">
+              <legend>Διαδρομή</legend>
+              <div class="radio-row">
+                <label><input type="radio" name="path" value="poem" checked /> Υποβολή ποιήματος</label>
+                <label><input type="radio" name="path" value="actions" /> Συμμετοχή σε δράσεις</label>
+                <label><input type="radio" name="path" value="volunteer" /> Υποστήριξη / εθελοντισμός</label>
+              </div>
+            </fieldset>
+
+            <div class="form-grid">
+              <label>
+                <span>Ονοματεπώνυμο</span>
+                <input name="full_name" type="text" autocomplete="name" required />
+              </label>
+
+              <label>
+                <span>Email</span>
+                <input name="email" type="email" autocomplete="email" required />
+              </label>
+
+              <div class="block full" data-block="poem">
+                <label class="full">
+                  <span>Αρχείο υποβολής</span>
+                  <input name="poem_file" type="file" accept=".pdf,.doc,.docx,.txt" />
+                </label>
+
+                <label class="full">
+                  <span>Μικρό bio (προαιρετικό)</span>
+                  <textarea name="bio" rows="4" placeholder="2–3 προτάσεις"></textarea>
+                </label>
+              </div>
+
+              <div class="block full" data-block="actions" hidden>
+                <label class="full">
+                  <span>Δράσεις που σε ενδιαφέρουν</span>
+                  <div class="check-grid">
+                    <label><input type="checkbox" name="actions[]" value="workshops" /> Εργαστήρια</label>
+                    <label><input type="checkbox" name="actions[]" value="open-mic" /> Open mic</label>
+                    <label><input type="checkbox" name="actions[]" value="night" /> Νύχτα Ποίησης</label>
+                    <label><input type="checkbox" name="actions[]" value="walk" /> Περιήγηση</label>
+                  </div>
+                </label>
+
+                <label class="full">
+                  <span>Σημειώσεις</span>
+                  <textarea name="actions_notes" rows="4"></textarea>
+                </label>
+              </div>
+
+              <div class="block full" data-block="volunteer" hidden>
+                <label class="full">
+                  <span>Πώς θα ήθελες να βοηθήσεις;</span>
+                  <textarea name="availability" rows="4" placeholder="Χώροι, υποδοχή, ροή προγράμματος..."></textarea>
+                </label>
+              </div>
+
+              <label class="full">
+                <span>Συναίνεση για χρήση υλικού (φωτο/βίντεο/ήχος)</span>
+                <select name="media_consent" required>
+                  <option value="yes">Ναι, αποδέχομαι</option>
+                  <option value="no">Όχι, δεν αποδέχομαι</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">Αποστολή</button>
+              <p class="fineprint">
+                <a class="text-link" href="terms.html">Όροι συμμετοχής</a> •
+                <a class="text-link" href="privacy.html">Απόρρητο / cookies</a>
+              </p>
+            </div>
+          </form>
+        </div>
+
+        <div class="page-nav">
+          <a class="btn btn-ghost" href="schools.html">← Για Σχολεία</a>
+          <a class="btn btn-primary" href="rethymno.html">Συνέχεια: Χώροι &amp; Ρέθυμνο →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div>
+        <h2 class="footer-title">1ο Φεστιβάλ Ποίησης Κρήτης/ Ρεθύμνου</h2>
+        <p class="muted">1st Cretan Poetry Festival • 5–6 Ιουνίου 2026</p>
+        <p class="muted">Επικοινωνία: <a class="text-link" href="mailto:info@example.gr">info@example.gr</a></p>
+      </div>
+      <div>
+        <h3>Σύνδεσμοι</h3>
+        <ul class="footer-links">
+          <li><a href="festival.html">Πληροφορίες</a></li>
+          <li><a href="poets.html">Ποιητές-Ποιήτριες</a></li>
+          <li><a href="program.html">Πρόγραμμα</a></li>
+          <li><a href="participation.html">Ανοιχτό Κάλεσμα</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Χρήσιμες σελίδες</h3>
+        <ul class="footer-links">
+          <li><a href="accessibility.html">Προσβασιμότητα</a></li>
+          <li><a href="privacy.html">Πολιτική απορρήτου / cookies</a></li>
+          <li><a href="terms.html">Όροι συμμετοχής &amp; χρήση υλικού</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Social</h3>
+        <ul class="footer-links">
+          <li><a href="#" aria-disabled="true">Instagram (placeholder)</a></li>
+          <li><a href="#" aria-disabled="true">Facebook (placeholder)</a></li>
+        </ul>
+        <p class="fineprint">© <span data-year></span></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
