@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Επικοινωνία / FAQ — Νέες Φωνές." />
+  <title>Επικοινωνία / FAQ — Νέες Φωνές</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script defer src="assets/script.js"></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Μετάβαση στο κύριο περιεχόμενο</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span class="brand-text"><strong>Νέες φωνές</strong><span>Young Voices</span></span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span class="sr-only">Άνοιγμα/κλείσιμο μενού</span><span aria-hidden="true">☰</span></button>
+      <nav id="primary-nav" class="nav" aria-label="Κύριο μενού">
+        <ul>
+          <li><a href="index.html">Αρχική</a></li>
+          <li><a href="festival.html">Πληροφορίες</a></li>
+          <li><a href="poets.html">Ποιητές-Ποιήτριες</a></li>
+          <li><a href="program.html">Πρόγραμμα</a></li>
+          <li><a href="schools.html">Για Μαθητές &amp; Σχολεία</a></li>
+          <li><a href="participation.html">Ανοιχτό Κάλεσμα</a></li>
+          <li><a href="rethymno.html">Χώροι &amp; Ρέθυμνο</a></li>
+          <li><a href="committee.html">Οργάνωση</a></li>
+          <li><a href="contact.html" aria-current="page">Επικοινωνία / FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="section" aria-label="Επικοινωνία / FAQ">
+      <div class="container">
+        <div class="section-head">
+          <h2>Επικοινωνία / FAQ</h2>
+          <p class="muted">Γράψε μας—για να ανοίξει ο δρόμος.</p>
+        </div>
+
+        <div class="grid two-cols">
+          <div class="card">
+            <h3>Στείλε μήνυμα</h3>
+
+            <form class="form"
+                  name="contact"
+                  method="POST"
+                  data-netlify="true"
+                  netlify-honeypot="bot-field"
+                  action="/thank-you.html">
+              <input type="hidden" name="form-name" value="contact" />
+              <p class="honeypot">
+                <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+              </p>
+
+              <div class="form-grid">
+                <label>
+                  <span>Ονοματεπώνυμο</span>
+                  <input name="name" type="text" autocomplete="name" required />
+                </label>
+
+                <label>
+                  <span>Email</span>
+                  <input name="email" type="email" autocomplete="email" required />
+                </label>
+
+                <label class="full">
+                  <span>Μήνυμα</span>
+                  <textarea name="message" rows="6" required></textarea>
+                </label>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">Αποστολή</button>
+                <p class="fineprint">
+                  Email: <a class="text-link" href="mailto:info@example.gr">info@example.gr</a>
+                </p>
+              </div>
+            </form>
+          </div>
+
+          <div class="card">
+            <h3>FAQ</h3>
+
+            <details>
+              <summary>Χρειάζεται εμπειρία;</summary>
+              <p>Όχι. Η εμπειρία ξεκινάει τη στιγμή που εμφανίζεσαι.</p>
+            </details>
+
+            <details>
+              <summary>Υπάρχει κόστος;</summary>
+              <p>(Placeholder) Συμπληρώστε αν είναι δωρεάν ή αν υπάρχει συμβολικό κόστος.</p>
+            </details>
+
+            <details>
+              <summary>Προσβασιμότητα;</summary>
+              <p>(Placeholder) Συμπληρώστε πληροφορίες πρόσβασης ΑμεΑ.</p>
+            </details>
+          </div>
+        </div>
+
+        <div class="page-nav">
+          <a class="btn btn-ghost" href="committee.html">← Οργάνωση</a>
+          <a class="btn btn-primary" href="index.html">Επιστροφή στην Αρχική →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div>
+        <h2 class="footer-title">1ο Φεστιβάλ Ποίησης Κρήτης/ Ρεθύμνου</h2>
+        <p class="muted">1st Cretan Poetry Festival • 5–6 Ιουνίου 2026</p>
+        <p class="muted">Επικοινωνία: <a class="text-link" href="mailto:info@example.gr">info@example.gr</a></p>
+      </div>
+      <div>
+        <h3>Σύνδεσμοι</h3>
+        <ul class="footer-links">
+          <li><a href="festival.html">Πληροφορίες</a></li>
+          <li><a href="poets.html">Ποιητές-Ποιήτριες</a></li>
+          <li><a href="program.html">Πρόγραμμα</a></li>
+          <li><a href="participation.html">Ανοιχτό Κάλεσμα</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Χρήσιμες σελίδες</h3>
+        <ul class="footer-links">
+          <li><a href="accessibility.html">Προσβασιμότητα</a></li>
+          <li><a href="privacy.html">Πολιτική απορρήτου / cookies</a></li>
+          <li><a href="terms.html">Όροι συμμετοχής &amp; χρήση υλικού</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Social</h3>
+        <ul class="footer-links">
+          <li><a href="#" aria-disabled="true">Instagram (placeholder)</a></li>
+          <li><a href="#" aria-disabled="true">Facebook (placeholder)</a></li>
+        </ul>
+        <p class="fineprint">© <span data-year></span></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
