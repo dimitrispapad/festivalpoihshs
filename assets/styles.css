@@ -33,6 +33,10 @@ body{
     radial-gradient(1100px 600px at 92% -5%, color-mix(in oklab, var(--violet) 14%, transparent) 0%, transparent 62%),
     radial-gradient(900px 520px at 86% 80%, color-mix(in oklab, var(--pine) 12%, transparent) 0%, transparent 60%),
     repeating-linear-gradient(0deg, rgba(0,0,0,.012) 0px, rgba(0,0,0,.012) 1px, transparent 3px, transparent 7px);
+  
+  /* 3D Context for Page Turns */
+  perspective: 2000px;
+  overflow-x: hidden;
 }
 
 img{ max-width:100%; height:auto; }
@@ -397,4 +401,85 @@ legend{ font-weight:850; padding:0 .4rem; }
 @media (prefers-reduced-motion: reduce){
   html{ scroll-behavior:auto; }
   .btn, .skip-link{ transition:none; }
+  
+  /* Disable page turn on reduced motion */
+  main { transition: none !important; }
+  .page-turn-exit, .page-turn-enter { animation: none !important; transform: none !important; opacity: 1 !important; }
+}
+
+/* Artistic Effects */
+
+/* Cursor Trail */
+.cursor-trail {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  background: var(--focus);
+  opacity: 0.6;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  mix-blend-mode: multiply;
+}
+
+/* Scroll Reveal */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  will-change: opacity, transform;
+}
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Stagger delays for grids */
+.grid .reveal-on-scroll:nth-child(2) { transition-delay: 100ms; }
+.grid .reveal-on-scroll:nth-child(3) { transition-delay: 200ms; }
+
+/* Typewriter Cursor */
+.typewriter-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.1em;
+  background-color: var(--indigo);
+  animation: blink 1s step-end infinite;
+  vertical-align: text-bottom;
+  margin-left: 2px;
+}
+@keyframes blink { 
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Page Turn Transition */
+main {
+  transform-style: preserve-3d;
+  transform-origin: center left;
+  transition: transform 0.6s cubic-bezier(0.645, 0.045, 0.355, 1), opacity 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+  backface-visibility: hidden;
+  will-change: transform, opacity;
+  min-height: 100vh;
+}
+
+.page-turn-exit {
+  transform: rotateY(-90deg);
+  opacity: 0;
+}
+
+.page-turn-enter {
+  animation: pageTurnIn 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+@keyframes pageTurnIn {
+  0% {
+    transform: rotateY(90deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
 }
