@@ -1,4 +1,3 @@
-// Mobile nav toggle + year + tabs + form path blocks
 (() => {
   // Year
   const y = document.querySelector("[data-year]");
@@ -15,7 +14,7 @@
     });
   }
 
-  // Tabs (only where present)
+  // Tabs (only on program.html)
   const tabsRoot = document.querySelector("[data-tabs]");
   if (tabsRoot) {
     const tabs = Array.from(tabsRoot.querySelectorAll('[role="tab"]'));
@@ -33,7 +32,7 @@
     tabs.forEach(tab => tab.addEventListener("click", () => activate(tab)));
   }
 
-  // Participation form blocks (only where present)
+  // Participation form blocks (only on participation.html)
   const form = document.querySelector("[data-participation-form]");
   if (form) {
     const radios = Array.from(form.querySelectorAll('input[type="radio"][name="path"]'));
@@ -48,7 +47,6 @@
 
     const checked = radios.find(r => r.checked);
     if (checked) show(checked.value);
-
     radios.forEach(r => r.addEventListener("change", () => show(r.value)));
   }
 })();
