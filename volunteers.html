@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Εθελοντές — Δήλωση συμμετοχής στο 1ο Φεστιβάλ Ποίησης Κρήτης/Ρεθύμνου." />
+  <title>Εθελοντές — Δήλωση Συμμετοχής</title>
+
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script defer src="assets/script.js"></script>
+</head>
+
+<body id="top">
+  <a class="skip-link" href="#main">Μετάβαση στο κύριο περιεχόμενο</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Αρχική">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">
+          <strong>Νέες φωνές</strong>
+          <span>Young Voices</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Άνοιγμα/κλείσιμο μενού</span>
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <nav id="primary-nav" class="nav" aria-label="Κύριο μενού">
+        <ul>
+          <li><a href="index.html">Αρχική</a></li>
+          <li><a href="festival.html">Πληροφορίες</a></li>
+          <li><a href="poets.html">Ποιητές-Ποιήτριες</a></li>
+          <li><a href="program.html">Πρόγραμμα</a></li>
+          <li><a href="schools.html">Για Μαθητές &amp; Σχολεία</a></li>
+          <li><a href="participation.html">Ανοιχτό Κάλεσμα</a></li>
+          <li><a href="volunteers.html" aria-current="page">Εθελοντές</a></li>
+          <li><a href="rethymno.html">Χώροι &amp; Ρέθυμνο</a></li>
+          <li><a href="committee.html">Οργάνωση</a></li>
+          <li><a href="contact.html">Επικοινωνία / FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="section alt" aria-label="Εθελοντές">
+      <div class="container">
+        <div class="section-head">
+          <h2>Εθελοντές — Δήλωση συμμετοχής</h2>
+          <p class="muted">Η πόλη έχει ανάγκη από χέρια, φωνές, φροντίδα.</p>
+        </div>
+
+        <div class="grid two-cols">
+          <article class="card prose">
+            <h3>Τι μπορείς να κάνεις (ενδεικτικά)</h3>
+            <ul class="bullets">
+              <li>Υποδοχή / εγγραφές</li>
+              <li>Ροή προγράμματος / συνοδεία</li>
+              <li>Τεχνική υποστήριξη (μικρόφωνο, προβολή)</li>
+              <li>Φωτο/βίντεο (αν υπάρχει εμπειρία)</li>
+              <li>Βοήθεια στους χώρους / στήσιμο</li>
+            </ul>
+            <p class="muted">Συμπλήρωσε τη φόρμα και θα επικοινωνήσουμε.</p>
+          </article>
+
+          <div class="card">
+            <h3>Φόρμα εθελοντών</h3>
+
+            <!-- Netlify-ready form -->
+            <form class="form"
+                  name="volunteers"
+                  method="POST"
+                  data-netlify="true"
+                  netlify-honeypot="bot-field"
+                  action="/thank-you.html">
+              <input type="hidden" name="form-name" value="volunteers" />
+              <p class="honeypot">
+                <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+              </p>
+
+              <div class="form-grid">
+                <label>
+                  <span>Ονοματεπώνυμο</span>
+                  <input name="full_name" type="text" autocomplete="name" required />
+                </label>
+
+                <label>
+                  <span>Email</span>
+                  <input name="email" type="email" autocomplete="email" required />
+                </label>
+
+                <label>
+                  <span>Τηλέφωνο (προαιρετικό)</span>
+                  <input name="phone" type="tel" autocomplete="tel" />
+                </label>
+
+                <label>
+                  <span>Πόλη / Περιοχή</span>
+                  <input name="location" type="text" autocomplete="address-level2" />
+                </label>
+
+                <fieldset class="fieldset full">
+                  <legend>Διαθεσιμότητα</legend>
+                  <div class="check-grid">
+                    <label><input type="checkbox" name="availability[]" value="fri_afternoon" /> Παρασκευή απόγευμα</label>
+                    <label><input type="checkbox" name="availability[]" value="sat_afternoon" /> Σάββατο απόγευμα</label>
+                    <label><input type="checkbox" name="availability[]" value="sat_evening" /> Σάββατο βράδυ</label>
+                    <label><input type="checkbox" name="availability[]" value="setup" /> Στήσιμο / πριν</label>
+                  </div>
+                </fieldset>
+
+                <fieldset class="fieldset full">
+                  <legend>Ρόλοι που σε ενδιαφέρουν</legend>
+                  <div class="check-grid">
+                    <label><input type="checkbox" name="roles[]" value="welcome" /> Υποδοχή</label>
+                    <label><input type="checkbox" name="roles[]" value="program_flow" /> Ροή προγράμματος</label>
+                    <label><input type="checkbox" name="roles[]" value="venues" /> Χώροι / στήσιμο</label>
+                    <label><input type="checkbox" name="roles[]" value="tech" /> Τεχνική υποστήριξη</label>
+                    <label><input type="checkbox" name="roles[]" value="photo_video" /> Φωτο/βίντεο</label>
+                    <label><input type="checkbox" name="roles[]" value="social" /> Social / επικοινωνία</label>
+                  </div>
+                </fieldset>
+
+                <label class="full">
+                  <span>Εμπειρία / δεξιότητες (προαιρετικό)</span>
+                  <textarea name="skills" rows="4" placeholder="π.χ. ήχος, φωτογραφία, διοργάνωση, φιλοξενία..."></textarea>
+                </label>
+
+                <label class="full">
+                  <span>Σχόλιο (προαιρετικό)</span>
+                  <textarea name="notes" rows="4"></textarea>
+                </label>
+
+                <label class="full">
+                  <span>Συναίνεση για επικοινωνία</span>
+                  <select name="contact_consent" required>
+                    <option value="yes">Ναι, επιτρέπω να επικοινωνήσετε μαζί μου</option>
+                    <option value="no">Όχι</option>
+                  </select>
+                </label>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">Υποβολή</button>
+                <p class="fineprint">
+                  Με την υποβολή αποδέχεστε την <a class="text-link" href="privacy.html">πολιτική απορρήτου</a>.
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="page-nav">
+          <a class="btn btn-ghost" href="participation.html">← Ανοιχτό Κάλεσμα</a>
+          <a class="btn btn-primary" href="contact.html">Επικοινωνία →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div>
+        <h2 class="footer-title">1ο Φεστιβάλ Ποίησης Κρήτης/ Ρεθύμνου</h2>
+        <p class="muted">1st Cretan Poetry Festival • 5–6 Ιουνίου 2026</p>
+        <p class="muted">Επικοινωνία: <a class="text-link" href="mailto:info@example.gr">info@example.gr</a></p>
+      </div>
+
+      <div>
+        <h3>Χρήσιμες σελίδες</h3>
+        <ul class="footer-links">
+          <li><a href="accessibility.html">Προσβασιμότητα</a></li>
+          <li><a href="privacy.html">Πολιτική απορρήτου / cookies</a></li>
+          <li><a href="terms.html">Όροι συμμετοχής &amp; χρήση υλικού</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Social</h3>
+        <ul class="footer-links">
+          <li><a href="#" aria-disabled="true">Instagram (placeholder)</a></li>
+          <li><a href="#" aria-disabled="true">Facebook (placeholder)</a></li>
+        </ul>
+        <p class="fineprint">© <span data-year></span></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
