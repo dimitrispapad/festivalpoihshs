@@ -28,7 +28,6 @@ body{
   background:var(--bg);
   line-height:1.75;
 
-  /* paper + ink */
   background-image:
     radial-gradient(1200px 650px at 12% -10%, color-mix(in oklab, var(--coffee) 22%, transparent) 0%, transparent 60%),
     radial-gradient(1100px 600px at 92% -5%, color-mix(in oklab, var(--violet) 14%, transparent) 0%, transparent 62%),
@@ -146,6 +145,7 @@ h1{
   margin:0 0 1rem;
   letter-spacing:-0.01em;
 }
+h2{ margin:0; }
 .subhead{ font-size:.95rem; color:var(--muted); }
 .gradient-text{
   background: linear-gradient(90deg, var(--indigo), var(--violet));
@@ -218,7 +218,7 @@ h1{
   display:flex; align-items:baseline; justify-content:space-between;
   gap:1rem; margin-bottom:1.2rem; flex-wrap:wrap;
 }
-.section-head h2{ margin:0; font-size: clamp(1.55rem, 2.6vw, 2.05rem); }
+.section-head h2{ font-size: clamp(1.55rem, 2.6vw, 2.05rem); }
 .muted{ color:var(--muted); }
 
 .grid{ display:grid; gap:1rem; }
@@ -277,6 +277,7 @@ h1{
   color:#fff;
   border-color:transparent;
 }
+.tabpanel{ border-radius: var(--radius); }
 
 .agenda{ display:grid; gap:.85rem; }
 .agenda-item{
