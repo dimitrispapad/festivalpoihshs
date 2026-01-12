@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Για Μαθητές & Σχολεία — Νέες Φωνές." />
+  <title>Για Μαθητές & Σχολεία — Νέες Φωνές</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script defer src="assets/script.js"></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Μετάβαση στο κύριο περιεχόμενο</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span class="brand-text"><strong>Νέες φωνές</strong><span>Young Voices</span></span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span class="sr-only">Άνοιγμα/κλείσιμο μενού</span><span aria-hidden="true">☰</span></button>
+      <nav id="primary-nav" class="nav" aria-label="Κύριο μενού">
+        <ul>
+          <li><a href="index.html">Αρχική</a></li>
+          <li><a href="festival.html">Πληροφορίες</a></li>
+          <li><a href="poets.html">Ποιητές-Ποιήτριες</a></li>
+          <li><a href="program.html">Πρόγραμμα</a></li>
+          <li><a href="schools.html" aria-current="page">Για Μαθητές &amp; Σχολεία</a></li>
+          <li><a href="participation.html">Ανοιχτό Κάλεσμα</a></li>
+          <li><a href="rethymno.html">Χώροι &amp; Ρέθυμνο</a></li>
+          <li><a href="committee.html">Οργάνωση</a></li>
+          <li><a href="contact.html">Επικοινωνία / FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="section" aria-label="Για Μαθητές και Σχολεία">
+      <div class="container">
+        <div class="section-head">
+          <h2>Για Μαθητές &amp; Σχολεία (Παρασκευή)</h2>
+          <p class="muted">Εργαστήριο + απαγγελίες • Χώρος: ΦΠΚ ΞΕΝΙΑ (Ρέθυμνο)</p>
+        </div>
+
+        <div class="grid two-cols">
+          <article class="card">
+            <h3>Τι θα γίνει</h3>
+            <ul class="bullets">
+              <li>17:00–19:00 εργαστήριο ποίησης για μαθητές/τριες</li>
+              <li>19:00–20:00 απαγγελίες ποιημάτων μαθητών/τριών</li>
+              <li>ποιήματα: από το κάλεσμα ή από το εργαστήριο</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Οδηγίες για σχολεία</h3>
+            <ul class="bullets">
+              <li><strong>Αριθμός συμμετεχόντων:</strong> (placeholder)</li>
+              <li><strong>Συνοδοί:</strong> (placeholder)</li>
+              <li><strong>Μετακίνηση:</strong> (placeholder)</li>
+              <li><strong>Τι να φέρουν:</strong> τετράδιο/στυλό, νερό, (προαιρετικά) 1 αγαπημένο ποίημα</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="card">
+          <h3>Υποβολή ποιημάτων μαθητών (φόρμα)</h3>
+
+          <form class="form"
+                name="student-poems"
+                method="POST"
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+                action="/thank-you.html"
+                enctype="multipart/form-data">
+            <input type="hidden" name="form-name" value="student-poems" />
+            <p class="honeypot">
+              <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+            </p>
+
+            <div class="form-grid">
+              <label>
+                <span>Σχολείο / Ομάδα</span>
+                <input name="school_name" type="text" autocomplete="organization" required />
+              </label>
+
+              <label>
+                <span>Υπεύθυνος/η εκπαιδευτικός</span>
+                <input name="teacher_name" type="text" autocomplete="name" required />
+              </label>
+
+              <label>
+                <span>Email</span>
+                <input name="email" type="email" autocomplete="email" required />
+              </label>
+
+              <label>
+                <span>Αρχείο</span>
+                <input name="file" type="file" accept=".pdf,.doc,.docx,.txt" />
+              </label>
+
+              <label class="full">
+                <span>Σχόλια (προαιρετικά)</span>
+                <textarea name="notes" rows="4"></textarea>
+              </label>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">Υποβολή</button>
+              <p class="fineprint">
+                Με την υποβολή αποδέχεστε τους <a class="text-link" href="terms.html">όρους συμμετοχής &amp; χρήση υλικού</a>.
+              </p>
+            </div>
+          </form>
+        </div>
+
+        <div class="page-nav">
+          <a class="btn btn-ghost" href="program.html">← Πρόγραμμα</a>
+          <a class="btn btn-primary" href="participation.html">Συνέχεια: Ανοιχτό Κάλεσμα →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div>
+        <h2 class="footer-title">1ο Φεστιβάλ Ποίησης Κρήτης/ Ρεθύμνου</h2>
+        <p class="muted">1st Cretan Poetry Festival • 5–6 Ιουνίου 2026</p>
+        <p class="muted">Επικοινωνία: <a class="text-link" href="mailto:info@example.gr">info@example.gr</a></p>
+      </div>
+      <div>
+        <h3>Σύνδεσμοι</h3>
+        <ul class="footer-links">
+          <li><a href="festival.html">Πληροφορίες</a></li>
+          <li><a href="poets.html">Ποιητές-Ποιήτριες</a></li>
+          <li><a href="program.html">Πρόγραμμα</a></li>
+          <li><a href="participation.html">Ανοιχτό Κάλεσμα</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Χρήσιμες σελίδες</h3>
+        <ul class="footer-links">
+          <li><a href="accessibility.html">Προσβασιμότητα</a></li>
+          <li><a href="privacy.html">Πολιτική απορρήτου / cookies</a></li>
+          <li><a href="terms.html">Όροι συμμετοχής &amp; χρήση υλικού</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Social</h3>
+        <ul class="footer-links">
+          <li><a href="#" aria-disabled="true">Instagram (placeholder)</a></li>
+          <li><a href="#" aria-disabled="true">Facebook (placeholder)</a></li>
+        </ul>
+        <p class="fineprint">© <span data-year></span></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
