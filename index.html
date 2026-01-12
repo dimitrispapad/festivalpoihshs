@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Πρόγραμμα — Νέες Φωνές." />
-  <title>Πρόγραμμα — Νέες Φωνές</title>
+  <meta name="description" content="1ο Φεστιβάλ Ποίησης Κρήτης/Ρεθύμνου — Νέες Φωνές / Young Voices. Ρέθυμνο, 5–6 Ιουνίου 2026." />
+  <title>Νέες Φωνές — 1ο Φεστιβάλ Ποίησης Κρήτης/Ρεθύμνου</title>
   <link rel="stylesheet" href="assets/styles.css" />
   <script defer src="assets/script.js"></script>
 </head>
@@ -13,14 +13,25 @@
 
   <header class="site-header" role="banner">
     <div class="container header-inner">
-      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span class="brand-text"><strong>Νέες φωνές</strong><span>Young Voices</span></span></a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span class="sr-only">Άνοιγμα/κλείσιμο μενού</span><span aria-hidden="true">☰</span></button>
+      <a class="brand" href="index.html" aria-label="Αρχική">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">
+          <strong>Νέες φωνές</strong>
+          <span>Young Voices</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Άνοιγμα/κλείσιμο μενού</span>
+        <span aria-hidden="true">☰</span>
+      </button>
+
       <nav id="primary-nav" class="nav" aria-label="Κύριο μενού">
         <ul>
-          <li><a href="index.html">Αρχική</a></li>
+          <li><a href="index.html" aria-current="page">Αρχική</a></li>
           <li><a href="festival.html">Πληροφορίες</a></li>
           <li><a href="poets.html">Ποιητές-Ποιήτριες</a></li>
-          <li><a href="program.html" aria-current="page">Πρόγραμμα</a></li>
+          <li><a href="program.html">Πρόγραμμα</a></li>
           <li><a href="schools.html">Για Μαθητές &amp; Σχολεία</a></li>
           <li><a href="participation.html">Ανοιχτό Κάλεσμα</a></li>
           <li><a href="rethymno.html">Χώροι &amp; Ρέθυμνο</a></li>
@@ -32,97 +43,90 @@
   </header>
 
   <main id="main" tabindex="-1">
-    <section class="section alt" aria-label="Πρόγραμμα">
+    <section class="hero" aria-label="Εισαγωγή">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">1ο Φεστιβάλ Ποίησης Κρήτης/ Ρεθύμνου • 1st Cretan Poetry Festival</p>
+
+          <h1>
+            <span class="gradient-text">νέες φωνές</span><br />
+            <span class="subhead">young voices</span>
+          </h1>
+
+          <div class="stanza" aria-label="Ποιητικό σημείωμα">
+            <p class="whisper">
+              <span class="line">Το καλοκαίρι γράφει πάνω στην πόλη.</span>
+              <span class="line">Κι εμείς—μελάνι, στόμα, σιωπή—</span>
+              <span class="line">δοκιμάζουμε να ακουστούμε.</span>
+            </p>
+          </div>
+
+          <p class="lead">
+            <strong>Διάρκεια:</strong> 5 – 6 Ιουνίου 2026<br />
+            <strong>Τόπος:</strong> Ρέθυμνο, Κρήτη
+          </p>
+
+          <div class="toc" aria-label="Πίνακας περιεχομένων">
+            <a href="festival.html">Πληροφορίες</a><span aria-hidden="true"> · </span>
+            <a href="poets.html">Ποιητές-Ποιήτριες</a><span aria-hidden="true"> · </span>
+            <a href="program.html">Πρόγραμμα</a><span aria-hidden="true"> · </span>
+            <a href="participation.html">Ανοιχτό Κάλεσμα</a>
+          </div>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="participation.html">Στείλε ποιήματα / Δήλωσε συμμετοχή</a>
+            <a class="btn btn-secondary" href="schools.html">Για σχολεία (Παρασκευή)</a>
+          </div>
+
+          <p class="ink-note">Στην αρχή της διαδρομής, η φωνή χρειάζεται χώρο—όχι άδεια.</p>
+        </div>
+
+        <div class="hero-card" role="region" aria-label="Γρήγορη πρόσβαση">
+          <div class="card">
+            <h2 class="card-title">Πρόγραμμα Φεστιβάλ</h2>
+            <p class="muted">Δύο μέρες, τέσσερις στάσεις, ένα κοινό σώμα.</p>
+            <ul class="bullets">
+              <li><strong>Παρασκευή:</strong> εργαστήριο μαθητών &amp; απαγγελίες</li>
+              <li><strong>Σάββατο:</strong> εργαστήρια, open mic, νύχτα ποίησης</li>
+            </ul>
+            <a class="text-link" href="program.html">Δες αναλυτικά →</a>
+          </div>
+
+          <div class="card">
+            <h2 class="card-title">Οργάνωση</h2>
+            <p class="muted">
+              (Συμπληρώστε φορείς/ομάδα)<br />
+              Πανεπιστήμιο Κρήτης • Ανθρωπιστικές Επιστήμες • Ρέθυμνο
+            </p>
+            <a class="text-link" href="committee.html">Δες επιτροπή →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" aria-label="Ενότητες">
       <div class="container">
         <div class="section-head">
-          <h2>Πρόγραμμα</h2>
-          <p class="muted">Πρόγραμμα Φεστιβάλ (ενσωμάτωση του κειμένου σας, με καθαρή μορφή).</p>
+          <h2>Ενότητες</h2>
+          <p class="muted">Κάθε σελίδα σαν κεφάλαιο.</p>
         </div>
 
-        <div class="tabs" data-tabs>
-          <div class="tablist" role="tablist" aria-label="Ημέρες προγράμματος">
-            <button class="tab" role="tab" aria-selected="true" aria-controls="day-1" id="tab-day-1" type="button">
-              Παρασκευή 5 Ιουνίου
-            </button>
-            <button class="tab" role="tab" aria-selected="false" aria-controls="day-2" id="tab-day-2" type="button">
-              Σάββατο 6 Ιουνίου
-            </button>
-          </div>
-
-          <div class="tabpanel" role="tabpanel" id="day-1" aria-labelledby="tab-day-1">
-            <div class="agenda">
-              <article class="agenda-item">
-                <div class="agenda-time">17:00–19:00</div>
-                <div class="agenda-body">
-                  <h3>Εργαστήριο Ποίησης για μαθητές/τριες</h3>
-                  <p class="muted">
-                    <strong>Το εργαστήρι:</strong> (συμπληρώστε περιγραφή)<br />
-                    <strong>Τόπος:</strong> Φοιτητικό Πολιτιστικό Κέντρο ΞΕΝΙΑ, Ρέθυμνο
-                  </p>
-                </div>
-              </article>
-
-              <article class="agenda-item">
-                <div class="agenda-time">19:00–20:00</div>
-                <div class="agenda-body">
-                  <h3>Απαγγελίες Ποιημάτων μαθητών/τριών</h3>
-                  <p>
-                    Τα ποιήματα που θα διαβάσουν τα παιδιά θα είναι είτε όσα έφτασαν με το κάλεσμα είτε και όσα γράφτηκαν
-                    την ώρα του εργαστηρίου.
-                  </p>
-                  <p class="muted"><strong>Τόπος:</strong> Φοιτητικό Πολιτιστικό Κέντρο ΞΕΝΙΑ, Ρέθυμνο</p>
-                </div>
-              </article>
-            </div>
-          </div>
-
-          <div class="tabpanel" role="tabpanel" id="day-2" aria-labelledby="tab-day-2" hidden>
-            <div class="agenda">
-              <article class="agenda-item">
-                <div class="agenda-time">16:00–18:00</div>
-                <div class="agenda-body">
-                  <h3>Εργαστήρι ποίησης/γραφής (Α)</h3>
-                  <p class="muted"><strong>Τόπος:</strong> (placeholder) • <strong>Συντονιστές:</strong> (placeholder)</p>
-                </div>
-              </article>
-
-              <article class="agenda-item">
-                <div class="agenda-time">16:00–18:00</div>
-                <div class="agenda-body">
-                  <h3>Εργαστήρι γραφής/ποίησης (Β)</h3>
-                  <p class="muted"><strong>Τόπος:</strong> (placeholder) • <strong>Συντονίστριες:</strong> (placeholder)</p>
-                </div>
-              </article>
-
-              <article class="agenda-item">
-                <div class="agenda-time">18:30–19:15</div>
-                <div class="agenda-body">
-                  <h3>Open Mic στη Λότζια / Αρχαιολογικό Μουσείο Ρεθύμνου</h3>
-                  <p class="muted"><strong>Σημείο:</strong> (confirm ακριβές meeting point)</p>
-                </div>
-              </article>
-
-              <article class="agenda-item">
-                <div class="agenda-time">19:30–21:30</div>
-                <div class="agenda-body">
-                  <h3>Νύχτα Ποίησης</h3>
-                  <p>
-                    Απαγγελίες / performances ποιημάτων που θα έχουν επιλεγεί από την κριτική επιτροπή
-                    (ενδεχομένως και με ένα διάλειμμα στη μέση με τη χορωδία του ΠΚ).
-                  </p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-
-        <div class="download-row">
-          <a class="btn btn-ghost" href="#" aria-disabled="true">Κατέβασε το πρόγραμμα (PDF) — σύντομα</a>
-        </div>
-
-        <div class="page-nav">
-          <a class="btn btn-ghost" href="poets.html">← Ποιητές-Ποιήτριες</a>
-          <a class="btn btn-primary" href="schools.html">Συνέχεια: Για Σχολεία →</a>
+        <div class="grid cards-3">
+          <article class="card">
+            <h3>Πληροφορίες</h3>
+            <p class="muted">Το κείμενο, η ιδέα, το γιατί.</p>
+            <a class="text-link" href="festival.html">Άνοιγμα →</a>
+          </article>
+          <article class="card">
+            <h3>Πρόγραμμα</h3>
+            <p class="muted">Ώρες/χώροι, και ανάμεσά τους ο ρυθμός.</p>
+            <a class="text-link" href="program.html">Άνοιγμα →</a>
+          </article>
+          <article class="card">
+            <h3>Ανοιχτό Κάλεσμα</h3>
+            <p class="muted">Στείλε ποίημα. Δήλωσε παρουσία.</p>
+            <a class="text-link" href="participation.html">Άνοιγμα →</a>
+          </article>
         </div>
       </div>
     </section>
@@ -135,6 +139,7 @@
         <p class="muted">1st Cretan Poetry Festival • 5–6 Ιουνίου 2026</p>
         <p class="muted">Επικοινωνία: <a class="text-link" href="mailto:info@example.gr">info@example.gr</a></p>
       </div>
+
       <div>
         <h3>Σύνδεσμοι</h3>
         <ul class="footer-links">
@@ -144,6 +149,7 @@
           <li><a href="participation.html">Ανοιχτό Κάλεσμα</a></li>
         </ul>
       </div>
+
       <div>
         <h3>Χρήσιμες σελίδες</h3>
         <ul class="footer-links">
@@ -152,6 +158,7 @@
           <li><a href="terms.html">Όροι συμμετοχής &amp; χρήση υλικού</a></li>
         </ul>
       </div>
+
       <div>
         <h3>Social</h3>
         <ul class="footer-links">
@@ -160,6 +167,11 @@
         </ul>
         <p class="fineprint">© <span data-year></span></p>
       </div>
+    </div>
+
+    <div class="container footer-logos" aria-label="Λογότυπα (placeholder)">
+      <div class="logo-pill">Πανεπιστήμιο Κρήτης</div>
+      <div class="logo-pill">Φορέας/Ομάδα (placeholder)</div>
     </div>
   </footer>
 </body>
